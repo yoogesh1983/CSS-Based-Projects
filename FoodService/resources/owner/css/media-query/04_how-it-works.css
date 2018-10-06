@@ -1,0 +1,27 @@
+@media only screen and (max-width: 1200px) { }
+
+
+@media only screen and (max-width: 1023px) {
+    
+    .steps-box:first-child {margin-top: 10px;}            /* original: 30px */
+    .steps-box:last-child {margin-top: 10px;}             /* original: 70px */
+    .works-step {margin-bottom: 40px;}                    /* origina: 50px*/
+    .works-step:last-of-type {margin-bottom: 60px;}       /* original: 80px */
+    .app-screen {width: 50%;}
+}
+
+@media only screen and (max-width: 767px) {
+
+    .steps-box:first-child {text-align: center;}            /* original: there were no text-align before */
+    .works-step {margin-bottom: 20px;}                    /* origina: 40px*/
+    .works-step:last-of-type {margin-bottom: 20px;}       /* original: 60px */
+    .app-screen {width: 40%;}
+    .works-step div {
+        height:40px;                                     /* original: 55px */
+        width:40px;                                      /* original: 55px */
+        padding: 4px;                                   /* Original: 5px */
+        margin-right: 15px;                             /* Original: 25px */
+        font-size: 120%;                               /* Original: 150% */
+    }
+}
+@media only screen and (max-width: 480px) {}

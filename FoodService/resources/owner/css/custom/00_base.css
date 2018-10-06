@@ -1,0 +1,32 @@
+/* ------------------------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* html, */
+body {
+    background-color: #fff;
+    color:#555;
+    font-family: 'lato', 'Arial', 'sans-serif';
+    font-weight: 300;
+    font-size: 20px;
+    overflow-x: hidden; /* do not show the horizontal scroll bar when texts are overflowed */
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom:1 }
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+

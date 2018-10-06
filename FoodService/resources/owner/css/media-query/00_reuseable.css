@@ -1,0 +1,26 @@
+@media only screen and (max-width: 1200px) {
+    
+    .row { padding: 0 2%; }    /* if width goes less than 1200px, then logo touhed the screen border. so making some padding here */
+    
+
+}
+
+
+@media only screen and (max-width: 1023px) {
+    
+    section {padding: 60px 0;}  /* lower the padding from 80px to 60px if the screen size is 768 - 1023 */
+    
+}
+
+
+@media only screen and (max-width: 767px) {
+    .row { padding: 0 4%; } 
+    section {padding: 30px 0;}
+    h1 {font-size: 180%;}
+    h2 {font-size: 150%;}
+}
+
+
+@media only screen and (max-width: 480px) {
+    section {padding: 25px 0;}
+}

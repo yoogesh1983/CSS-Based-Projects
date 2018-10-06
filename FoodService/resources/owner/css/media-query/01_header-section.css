@@ -1,0 +1,75 @@
+
+@media only screen and (max-width: 1200px) {
+
+    .hero-text-box {
+        width: 100%;            /* bydefault we have setup at 1140 px which we don't want if the screen goes less than 1200 */
+        padding: 0 2%;          /* In order to make some space on border and browser, creatig padding on left and right side */
+    }
+
+}
+
+
+@media only screen and (max-width: 1023px) {
+
+    
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .hero-text-box {
+        padding: 0 4%;
+    }
+
+    .col {
+        width: 100%;  /***Important*** Redefining grid***Now the column no longer be side-by-side. Instead they will be stacked */
+        margin: 0 0 4% 0;
+    }
+
+    
+    .main-nav {
+        float: left;
+        margin-top:35px;  /* Original: 55px */
+        margin-left:25px;
+        display: none;           /* Only show when we hit the bar icon. handled by jquery*/
+    }
+
+    .main-nav li {
+        display: block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border:0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    .mobile-nav-icon {
+        display:inline-block;
+    }
+
+
+    .sticky .mobile-nav-icon {
+        margin-top: 10px;              /* Original : 30px */         
+    }    
+    .sticky .mobile-nav-icon i {
+        color: black;                /* Original : white */
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited{
+        padding: 10px 0;                 /* Original : 16px 0 */
+    }
+
+    .sticky .main-nav {
+        margin-top: 10px;                /* Oriringl: 10px */
+    }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+}

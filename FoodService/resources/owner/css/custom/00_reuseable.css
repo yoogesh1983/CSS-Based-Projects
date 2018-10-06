@@ -1,0 +1,160 @@
+/* ------------------------------------------------------- */
+/* ROWS - SECTION - BOX */
+/* ------------------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding:1%;
+}
+
+
+
+
+/* ------------------------------------------------------- */
+/* Headings */
+/* ------------------------------------------------------- */
+
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color:#fff;
+    font-size: 240%;
+    word-spacing: 3px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size:110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #e67e22;
+    content:"";
+    margin:30px auto 0px auto;
+}
+
+
+
+
+/* ------------------------------------------------------- */
+/* BUTTONS */
+/* ------------------------------------------------------- */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active
+ {
+    background-color: #82450f;
+}
+
+.btn-full:link, 
+.btn-full:visited,
+input[type=submit] {
+    background-color: #e67e22;
+    border:1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-full:hover,
+.btn-full:active,
+ {
+    background-color: #82450f;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border:1px solid #e67e22;
+    color:#e67e22;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: #82450f;
+    color: #fff;
+}
+
+
+
+
+/* ------------------------------------------------------- */
+/* LINKS */
+/* ------------------------------------------------------- */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color:#555;
+    border-bottom: 1px solid transparent;
+}
+
+
+
+
+/* ------------------------------------------------------- */
+/* FADEIN COOL EFECTS ANIMATION PURPOSE */
+/* ------------------------------------------------------- */
+.js--waypoint1,
+.js--waypoint2,
+.js--waypoint3             /* except js--waypoint4 which doesn't fade in since it has pulsing effect */
+{
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--waypoint4 {
+    animation-duration: 1s;
+}
+
+.js--waypoint1.animated,
+.js--waypoint2.animated,
+.js--waypoint3.animated
+{
+    opacity: 1;
+}

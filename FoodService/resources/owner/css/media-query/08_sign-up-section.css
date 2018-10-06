@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1200px) { }
+
+
+@media only screen and (max-width: 1023px) {
+
+    .contact-form {
+        width: 80%;                /* Original: 60% */
+    }
+
+}
+
+@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 480px) {
+    .contact-form {
+        width: 100%;                /* Original: 80% */
+    }
+}

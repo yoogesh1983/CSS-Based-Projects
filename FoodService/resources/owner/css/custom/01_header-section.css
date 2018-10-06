@@ -1,0 +1,145 @@
+/* ------------------------------------------------------- */
+/* HEADER */
+/* ------------------------------------------------------- */
+
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../../img/background/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../img/background/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment:fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+
+
+/* ------------------------------------------------------- */
+/* MAIN NAVIGATION */
+/* ------------------------------------------------------- */
+
+.main-nav {
+    float:right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display:inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 92%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+}
+
+
+
+
+
+/* ------------------------------------------------------- */
+/* MOBILE NAVIGATION */
+/* ------------------------------------------------------- */
+
+.mobile-nav-icon {
+    float:right;
+    margin-top: 30px;
+    cursor: pointer;   /* we haven't put "href" eventhough it is <a>. so that pointer won't come.To bring it we need to do this */
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color:#fff;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------- */
+/* LOGO */
+/* ------------------------------------------------------- */
+
+/* both logo appears at the same same location on top of each other. However, Initially the stickey logo is invisible */
+.logo-original{
+    height:100px;
+    width:auto;
+    float:left;
+    margin-top: 20px;
+}
+
+.logo-sticky {
+    height:49px;
+    width:auto;
+    float:left;
+    margin: 5px 0;
+    display: none; 
+}
+
+
+
+
+/* ------------------------------------------------------- */
+/* STICKY NAVIGATION */
+/* ------------------------------------------------------- */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    /* let's not put all white, make it little bit transparent so that we can see the content beneath it */ 
+    background-color: rgba(255, 255, 255, 0.98);  
+
+    /* also make it shadow at the bottom so that we can differentiate a sticky header from other sectio when scroll down */
+    box-shadow: 0 2px 2px #efefef;  /* horozontal-0, vertical-2px, blorr-2px , color- shottle gray*/
+
+    /* the stickey appears below the picture in all section by default (in meal section you can see the diffrence). but we want it at the top. so we define this.. we must do this. so this element will ontop off all element since it has highest possible values.*/
+    z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 16px 0;
+    color:#555;  /* make is black so that the text are appear in the screen, because it was white before */
+}
+
+
+/* if .logo-sticky is  inside the .sticky class, then display it as a block which will no longer be an hidden */
+.sticky .logo-sticky {
+    display: block;
+}
+
+/*  However, In this time, we need to hide the .logo-original though.. */
+.sticky .logo-original {
+    display: none;
+}
+
+
+.sticky .main-nav {
+    margin-top: 18px;
+}

@@ -1,0 +1,19 @@
+@media only screen and (max-width: 1200px) { }
+
+
+@media only screen and (max-width: 1023px) {
+    
+    .plan-box {
+        width: 100%;                   /* Original: 90% */
+        margin-left: 0%;               /* Original: 5% */
+    }
+
+    .plan-price {
+        font-size: 250%;               /* Original: 300% */
+    }
+
+
+}
+
+@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 480px) {}
