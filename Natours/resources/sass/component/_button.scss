@@ -1,0 +1,111 @@
+
+.btn {
+    &::after {
+        content: "";
+        display: inline-block;
+    
+        /* ::after shudo element basically treated like a child element of the btn. so height and width 100% means we want same height and width like a btn on this too. and for border radious also, we want same 100px however we cannot say 100% here though*/
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+    
+       /* we want this to be put behind the actual button. so use absolute positioning which is 0 from top and 0 from left. make sure the relative for this is an actual button*/
+       position: absolute;
+       top: 0;
+       left: 0;
+    
+       /* we want to put this button behind the actual button. so z-index for this is -1 */
+       z-index: -1;
+    
+       /* define transition for the hover */
+       transition: all .4s;
+    }
+
+
+    &:link,
+    &:visited {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        font-weight: 300;
+        font-size: $default-font-size;
+    
+        /* doesn't matter you put 200px or 500px, it will always be the same like 100px */
+        border-radius: 10rem;             
+    
+        /* you can put all, if you want to apply transition properties on all. Because of this, the hover and active state transform are also animated. And this is the reason why you want to put transition on the initial state */
+        transition: all 0.2s;   
+        
+        /* for the ::after sudo element */
+        position: relative;
+    }
+    
+    &:hover
+    {
+        transform: translateY(-3px);   /* goes to 3px top from where it is right now i.e. initial link state*/
+        /* we don't want any shadow at x-direction so 0, we want shadow 10px down so 10px (not -10px), we want really high blurry and hence let's put 20 px, and finally we want a color of the shadow to be transparent */
+        box-shadow: 0 1rem 2rem rgba($color-black,0.2);
+
+        &::after {
+            /* when hover the actual button, then scale 1.4 at x-axis and 1.6 at y-axis the after button which is currently behind the actual button. and also define the transition for this transform. and where do we define that? on the initial state right? and the initial state for this hover is .btn::after right? so define transition there for this */
+            transform: scaleX(1.4) scaleY(1.6);
+        
+            /* we want it to be fade out as soon as the scale became 1.5. so for this make the opacity to be zero */
+            opacity: 0;
+        }
+    }
+    
+    &:active
+    {
+        transform: translateY(-1px);   /* goes to 1px top from where it is right now i.e. initial link state but not hover state */
+    
+        /* when we click the button and it is active, we here want to shadow to be smaller and give impression to be the button is closer to the page. so put 5px at y-direction. also we want less blured than hover so let's put 10px */
+        box-shadow: 0 .5rem 2rem rgba($color-black,0.2);
+    }
+    
+
+    &--white {
+        background-color: $color-white;
+        color:$color-gray-dark;
+
+        &::after {
+            /* background-color: rgba(13, 10, 184, 0.397); */
+            background-color: $color-white;
+         }
+    }
+
+    &--animated {
+        /* Animation */
+        animation: move-from-button-to-top 1s ease-out 2s;
+        animation-fill-mode: backwards;   /* will invisible until the animation starts */
+    }
+    
+}
+
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid  $color-primary;
+        padding: 3px;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black,.15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black,.15);
+        transform: translateY(0);
+
+    }
+}

@@ -1,0 +1,27 @@
+.feature-box {
+    background-color: rgba($color-white, .8); // i.e. white will be of 80% which means opacity of 20%
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    transition: transform .3s;
+
+    &__icon {
+        font-size:6rem;
+        margin-bottom: .5rem;
+        //Doing like in a heading section and we can do this because icon font is text here
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        display:inline-block;
+        -webkit-background-clip: text;
+        color:transparent;
+    }
+
+    &:hover {
+         // move up and scale by 1.03
+        transform: translateY(-1.5rem) scale(1.03);
+
+    }
+
+   // &__text {}  -- we don't need it since the font-size is automatically inheriting
+} 

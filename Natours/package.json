@@ -1,0 +1,16 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+
+  "scripts": {
+    "dev": "node-sass resources/sass/main.scss public/owner/style.css -w"
+  },
+  "author": "yoogesh",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}

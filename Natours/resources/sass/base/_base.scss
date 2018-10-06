@@ -1,0 +1,32 @@
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;      /* i.e. 62.5% of 16px = 10px */
+}
+
+
+body {
+    //font-size: $default-font-size;
+    font-family: 'lato', 'Arial', 'sans-serif';
+    font-weight: 400;
+    line-height: 1.7;                   /* 1.7 times bigger than the predefined which would have without this */
+    color: $color-gray-dark;
+    background-color: $color-white;
+    overflow-x: hidden;                 /* do not show the horizontal scroll bar when texts are overflowed */
+    text-rendering: optimizeLegibility;
+
+    /*optional...It is not used in omnifood project */
+    padding: 3rem;
+
+    /* box-sizing is not inherited by-default. to to make it inherit, we need to define it as inherit on universal selector */
+    box-sizing: border-box; 
+}
+
+

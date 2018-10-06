@@ -1,0 +1,58 @@
+
+
+/* ------------------------------------------------------- */
+/* KEY FRAMES */
+/* ------------------------------------------------------- */
+
+@keyframes move-from-left-to-right {
+
+    0% {
+        opacity: 0;                             /* at the begining of the animation, the opacity will be 0 */
+        transform: translateX(-10rem)         /* the text will be -100px left from where it should be currently */
+    }
+
+    80% {
+        transform: translateX(20rem)          /* when 80%, then it should be at 20px from where it should be currently */
+    }                                         /* Make sure, +ve value means it will go to the right side */
+
+    100% {
+        opacity: 1;                          /* At the end, the opacity will be 1 */
+        transform: translateX(0);           /* At the end, we want it to be where it should be i.e. it is right now i.e. 0 transform*/ 
+    }
+
+}
+
+
+
+@keyframes move-from-right-to-left {
+
+    0% {
+        opacity: 0;                            
+        transform: translateX(10rem)        
+    }
+
+    80% {
+        transform: translateX(-20rem)       
+    }                                        
+
+    100% {
+        opacity: 1;                         
+        transform: translateX(0);    
+    }
+
+}
+
+
+@keyframes move-from-button-to-top {
+
+    0% {
+        opacity: 0;                            
+        transform: translateY(3rem)        
+    }
+                                      
+    100% {
+        opacity: 1;                         
+        transform: translateY(0);    
+    }
+
+}
