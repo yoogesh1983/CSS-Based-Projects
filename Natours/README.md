@@ -14,4 +14,6 @@ http://linea.io/
 => Install live-server :  npm install live-server -g
 => Run live-server : live-server
 
+Note: You can run this project directly at Visual-Code live-server (Bypassing the above live-server installation step)
+
 
