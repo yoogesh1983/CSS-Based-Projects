@@ -34,7 +34,7 @@
         /* doesn't matter you put 200px or 500px, it will always be the same like 100px */
         border-radius: 10rem;             
     
-        /* you can put all, if you want to apply transition properties on all. Because of this, the hover and active state transform are also animated. And this is the reason why you want to put transition on the initial state */
+        /* you can put all, if you want to apply transition properties on all. Because of this, the hover and active state transform are also animated. And this is the reason why you want to put transition on the initial link (or visited) state */
         transition: all 0.2s;   
         
         /* for the ::after sudo element */
