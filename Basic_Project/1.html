@@ -1,0 +1,288 @@
+<html>
+<head>  
+<title> University of Houston </title>
+</head>
+
+<body>
+
+<h1> This is a header </h1>
+
+<p> This is a paragraph  </br> This is after break of paragraph </p>
+
+<!-- use of HTML entities i.e. making more space between the words. by default the space is only one -->
+<p> My name is yoogesh &nbsp; &nbsp; &nbsp; sharma </p> </br>
+
+<!-- some important entities -->
+&lt;  <!-- less than --> </br>
+&gt;  <!-- greater than --> </br>
+&amp;  <!-- Ampersand --> </br>
+&cent;  <!-- cent --> </br>
+&pound;  <!-- pound --> </br>
+&yen;  <!-- yen --> </br>
+&euro;  <!-- euro --> </br>
+&sect;  <!-- section --> </br>
+&copy;  <!-- copyright --> </br>
+&reg;  <!-- registered trademark --> </br>
+&trade;  <!-- trademark --> </br>
+
+
+<a href="https://www.google.com/" > Click here to open google in a same tab </a> </br>
+
+<!-- To open in a new tab -->
+<a href="https://www.google.com/" target="_blank" > Click here to open google in a new tab </a> </br>
+
+<!-- use of name anchers -->
+Go to : <a href="#yoogesh"> NAME ANCHER </a>
+
+
+
+<!-- bold sign -->
+<p> my name is  <strong>Yoogesh. </strong>  </p>
+
+
+<!-- Italic sign -->
+<p> my name is  <em>Yoogesh. </em>  </p>
+
+<!-- Super script -->
+<p> The equation is x<sup>2</sup> = 10 </p>
+
+<!-- Sub script -->
+<p> The equation is x<sub>2</sub> = 10 </p>
+
+<!-- use of pre-tag. i.e. if you want to show the computer programming code -->
+<pre>
+int i=0;
+for (i = 0;i<10;i++)
+{
+cout<<"The numbe is" + i;
+}
+</pre>
+
+
+<!-- use of Address-tag. i.e. if you want to show the address different than other text -->
+<address> 
+written by:Awais kamran </br>
+<a href="mailto:admin@peachtreetutor.com">Email </a> </br>
+vehari Road, Multan </br>
+</address>
+
+<!-- Abbreviation tags -->
+<p> <abbr title="World health Organization"> WHO </abbr>  was found in 1948 </p>
+
+<!-- Block codes -->
+<p> hello i am going to discuss about motion.<blockquote>"motion is for the people by the people" </blockquote>. ok that is for today.see you tommorow. </br>
+</P>
+
+<!-- creating Simple table -->
+<table border ="3" align="center">
+<caption>   <strong>Simple Table Example</strong>   </caption>   <!-- This is to give table information -->
+        <tr>
+			<th>ID </th>
+			<th>Name </th>
+			<th>Address </th>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>Yoogesh </td>
+			<td>Houston </td>
+		</tr>
+</table>
+
+
+<!-- creating Little bit harder table -->
+<table border ="3" align="left">
+<caption>3in 1 cell</caption>   
+        <tr>
+			<th colspan="3">Student Information </th>    
+		</tr>
+
+        <tr>
+			<th>ID </th>
+			<th> Name </th>
+	        <th>Address </th> 
+		</tr>
+		
+		<tr>
+			<td>01</td>
+			<td>Yoogesh </td>
+			<td>Houston </td>
+		</tr>
+		
+		<tr>
+			<td>02</td>
+			<td>SushilaSapkota </td>
+			<td>NP </td>
+		</tr>
+</table>
+
+
+<!-- Using cell padding in a table -->
+<table border ="3" align="right" cellpadding ="10">
+<caption>Cell Padding</caption>   
+        <tr>
+			<th colspan="3">Student Information </th>    
+		</tr>
+
+        <tr>
+			<th>ID </th>
+			<th> Name </th>
+	        <th>Address </th> 
+		</tr>
+		
+		<tr>
+			<td>01</td>
+			<td>Yoogesh </td>
+			<td>Houston </td>
+		</tr>
+		
+		<tr>
+			<td>02</td>
+			<td>SushilaSapkota </td>
+			<td>NP </td>
+		</tr>
+</table>
+<p></p> <p></p> <p></p>
+
+<!-- Usine cell Spacing in a table -->
+<table border ="3" align="center" cellspacing ="10">
+<caption>Cell Spacing</caption>   
+        <tr>
+			<th colspan="3">Student Information </th>    
+		</tr>
+
+        <tr>
+			<th>ID </th>
+			<th> Name </th>
+	        <th>Address </th> 
+		</tr>
+		
+		<tr>
+			<td>01</td>
+			<td>Yoogesh </td>
+			<td>Houston </td>
+		</tr>
+		
+		<tr>
+			<td>02</td>
+			<td>SushilaSapkota </td>
+			<td>NP </td>
+		</tr>
+</table>
+
+<h1> Ok now let's go and create a form: </h1>
+
+<!-- Creating simple form -->
+<form method="post" action="index.jsp">
+	UserName: <input type="text" name="userName"> </br>
+	Password:  <input type="password" name ="password"> </br></br>
+	
+	
+	<input type="radio" name ="Gender" value ="male"> Male </br>
+	<input type="radio" name ="Gender" value ="female"> Female </br></br>
+	
+	
+	Interests:</br>
+	<input type="checkbox" name="interests" value ="cricket"> Cricket</br>
+	<input type="checkbox" name="interests" value ="music"> Music</br>
+	<input type="checkbox" name="interests" value ="internet"> Internet</br>
+	<input type="checkbox" name="interests" value ="shopping"> Shopping</br></br>
+	
+	
+	Select your color: 
+	<select name="Fevcolor">
+	<option value="red"> Red </option>
+	<option value="green"> Green </option>
+	<option value="blue"> Blue </option>
+	<option value="pink"> Pink </option>
+	<option vlaue="red"> Red </option>
+	</select> </br></br>
+	
+	
+	Enter your message here:</br>
+	<textarea rows="10" cols="40"> </textarea> </br>    <!--  Here Rows means the height and cols means the width of the text area -->
+	
+	<input type ="submit" value="Create">
+	<input type ="reset"  value ="Start Over">	
+	
+</form> </br> </br> </br> 
+
+
+<!-- inserting an image. make sure there will be no closing tag for image -->
+<a href="https://www.google.com/">
+<img src="tree.jpg" alt="This is Tree" align="left" border="5" width="125" heitht="125">
+</a>
+This is a great picture taken in 2010.</br>
+I like this picture very very much.</br>
+This is a great picture taken in 2010.</br>
+I like this picture very very much.</br>
+This is a great picture taken in 2010.</br>
+I like this picture very very much.</br>
+This is a great picture taken in 2010.</br>
+I like this picture very very much.</br>
+This is a great picture taken in 2010.</br>
+I like this picture very very much.</br>
+
+
+<!-- Inserting Simple Ordered list options are: A,a,1,I,i -->
+<ol type="A">
+	<li> Tea </li>
+	<li> Coffee </li>
+	<li> Pepsi </li>
+</ol> 
+
+
+<!-- Inserting Simple Un-Ordered list  -->
+<ul>
+	<li> Tea  </li>
+	<li> Coffee </li>
+	<li> Pepsi </li>
+</ul
+
+
+<!-- Inserting Simple Defination list  -->
+<dl>
+	<dt> Account </dt>
+	<dd> This is a summarized recored of transaction.</dd>
+	
+	<dt> Computer </dt>
+	<dd> This is a device which we use every day in our life.</dd>
+	
+</dl
+
+
+<!-- Inserting Unordered list inside Ordered list  -->
+<ol>
+	<li> Tea:  
+			<ul> 
+					<li> Black Tee </li>
+					<li> Green Tee </li>
+					<li> Red Tee </li> 
+			</ul> 
+	</li>
+	<li> Coffee </li>
+	<li> Pepsi </li>
+</ol
+
+<!-- use of Name anchers -->  
+<h1>   <a name="yoogesh"> This is example for name anchers.</a>   </h1>
+
+
+<!-- use of Iframe i.e. showing another html file in this html page -->
+<iframe src="2.html" width="400" height="400" frameborder="0"> 
+</iframe>
+
+<!-- use of Iframe i.e. showing another html file in this html page -->
+<p> my name is <a href= "https://www.google.com/" target="shyam"> yoogesh </a> sharma </p>
+<iframe src="1.html" width="400" height="400" name="shyam"> 
+</iframe>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

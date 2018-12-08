@@ -1,0 +1,176 @@
+h1{
+color:#2B60DE;
+text-align:center;
+font-family:verdana;
+font-size:16px;
+word-spacing:8px;
+letter-spacing:2px;
+text-indent:20px;  /* This is used In paragraph to create some space in a first line */ 
+line-height:50%; /* by-default it is 110% */
+direction:rtl; /*By-default it is ltr */
+text-transform:uppercase;  /* other options are : lowercase, capitalize */
+text-decoration:underline; /* In link,  text-decoration by-default is underline. other options are : overline, no, line-through, blink */
+a:link{color:#800000; text-decoration:None; background-color:#b2ff99;}   /* define the state of the link */
+a:hover{color:#008000; text-decoration:underline;background-color:#ffff85; font-size:150%; font-family:monospace;}  /* define the state of the link  when you bring a mouse over the link*/
+a:visited{color:#808000; text-decoration:overline;}/* define the state of the link  after you visit the link*/
+a:active{color:#000A00; text-decoration:line-through;} /* define the state of the link when you pressed the link but mouse is still there */
+
+}
+
+
+#Awais {          /*Declaring ID */
+
+ /* 
+ Declare whatever you want in css and use the below in a html file: 
+ <p id="Awais"> This is a paragraph </p>
+ */
+ 
+}
+
+
+.Yoogesh {  /*Declaring class */
+
+/* 
+ Declare whatever you want in css and use the below in a html file: 
+ <p class="Yoogesh"> This is a paragraph </p>
+ */
+}
+
+
+p.Sushila {  /*Declaring Special class which could be used only in paragraph */
+
+/* 
+ Declare whatever you want in css and use the below in a html file: 
+ <p class="Yoogesh"> This is a paragraph </p>
+ */
+}
+
+body{
+background-color:b0c4de;
+background-image:url(tree.jpg);
+background-repeat:no-repeat;
+background-position:right top;
+background-attachment:fixed;  /* By default it is scroll */
+}
+
+ul.styleforUnorderlist{    /* This is special class which is applied only to unordered list */
+list-style-type:square;  /* by-default the type is bullet in unordered list. other options are: circle, disc */
+list-style-image:url(tree.jpg); /* if you do this, then there will be image instead of bullet. By the way these two both can not have at a same time, ok!! */
+
+}
+
+/* Applying css for table */
+table{
+width:50%; /* This will cover the 50% area of the page*/
+border-collapse:collapse;
+border:1px solid#E4317f; 
+}
+
+th{
+background-color:green;
+color:white;
+border:1px solid#E4317f;
+text-align:left; /* for Horizontal alignment of text. other options are: right, center */
+vertical-align:bottom; /*for vertical-alignment of text. other options are: top, middle */
+}
+
+td{
+background-color:red;
+color:black;
+border:1px solid#E4317f;
+text-align:left; /* for Horizontal alignment of text. other options are: right, center */
+vertical-align:bottom; /*for vertical-alignment of text. other options are: top, middle */
+height:50px; /* setting the height of the table column.here we are doing this just for td */
+padding-left:10px; /* uncomment the height:50px; you will see the effect of padding. options are:  padding, padding-bottom, padding-right, padding-top */
+
+}
+
+
+/*CSS box model */
+p.One{
+border-top-style:solid; /* other options are: dotted, dashed, double, groove, ridge, inset, outset */
+border-bottom-style:double; /* if you want to do same in all then border-style */
+border-right-style:groove;
+border-left-style:dotted;
+border-width:5px;
+border-color:blue;
+
+margin-top:50px; /* These are the margins outside the border. not inside a border */
+margin-bottom:50px;
+margin-left:50px;
+margin-right:50px;
+
+padding-top:30px;
+padding-bottom:30px;
+padding-left:30px;
+padding-right:0px;
+
+}
+
+
+/* Declaration of DIV */
+
+#headerDiv{
+
+width:650px;
+height:100px; /* auto is fine. if you do auto, it will automatically adjusted */
+background:#0000A0;
+}
+
+#mainDiv{
+width:475px;
+height:500px; /* auto is fine */
+background:#C0C0C0;
+
+/* Using relative positioning. By the way we mostly use absolute positioning
+position:relative; 
+top: 20px;
+left: 30px;  */
+
+/* Using absolute positioning*/
+position:absolute; 
+top: 560px;
+
+}
+
+#leftsideDiv{
+width:175px;
+height:500px; /* auto is fine */
+background:#ADD8E6;
+
+/* Using absolute positioning*/
+position:absolute; 
+top: 560px;
+left:480px;
+}
+
+#footer{
+width:650px;
+height:75px; /* auto is fine */
+background:#00FFFF;
+
+/* Using absolute positioning*/
+position:absolute; 
+top: 1060px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
