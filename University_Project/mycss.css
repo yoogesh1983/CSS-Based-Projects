@@ -1,0 +1,157 @@
+
+
+/****************************************
+        Applying CSS for whole body
+******************************************/
+
+body{
+
+background-color:b0c4de;
+background-image:url(22.jpg);
+background-repeat:no-repeat;
+background-position:right top;
+background-attachment:fixed;  
+
+}
+
+
+
+/****************************************
+        Declaration of DIV 
+******************************************/
+
+#headerDiv{
+
+width:647px;
+height:101px; /* auto is fine. if you do auto, it will automatically adjusted */
+background:#8A2BE2;
+}
+
+#mainDiv{
+width:475px;
+height:556px; /* auto is fine */
+background:#C0C0C0;
+
+/* Using relative positioning. By the way we mostly use absolute positioning
+position:relative; 
+top: 20px;
+left: 30px;  */
+
+/* Using absolute positioning*/
+position:absolute; 
+top: 109px;
+
+}
+
+#leftsideDiv{
+width:175px;
+height:560px; /* auto is fine */
+background:#ADD8E6;
+
+/* Using absolute positioning*/
+position:absolute; 
+top: 109px;
+
+left:480px;
+}
+
+#footer{
+width:647px;
+height:30px; /* auto is fine */
+background:#00FFFF;
+
+/* Using absolute positioning*/
+position:absolute; 
+top: 665px;
+}
+
+
+
+/****************************************
+        Applying CSS for table 
+******************************************/
+
+table{
+width:100%; /* This will cover the 100% area of the page*/
+border-collapse:collapse;
+border:1px solid#E4317f; 
+}
+
+th{
+background-color:green;
+color:white;
+border:1px solid#E4317f;
+text-align:center; /* for Horizontal alignment of text. other options are: right, left */
+vertical-align:bottom; /*for vertical-alignment of text. other options are: top, middle */
+}
+
+td{
+background-color:red;
+color:black;
+border:1px solid#E4317f;
+text-align:left; /* for Horizontal alignment of text. other options are: right, center */
+vertical-align:middle; /*for vertical-alignment of text. other options are: top, bottom */
+height:50px; /* setting the height of the table column.here we are doing this just for td */
+padding-left:10px; /* uncomment the height:50px; you will see the effect of padding. options are:  padding, padding-bottom, padding-right, padding-top */
+
+}
+
+
+/****************************************
+        Applying CSS for all the header
+******************************************/
+
+
+h1{
+color:red;
+text-align:center;
+font-size:25px;
+text-transform:uppercase;  /* other options are : lowercase, capitalize */
+text-decoration:blink;
+/*
+font-family:verdana;
+word-spacing:8px;
+letter-spacing:2px;
+text-indent:20px;  
+line-height:50%; 
+direction:rtl; 
+text-decoration:underline;
+*/
+}
+
+
+/****************************************
+        Applying CSS for Forms
+******************************************/
+
+form{
+background-color:green;
+color:white;
+border:1px solid#E4317f;
+text-align:center; /* for Horizontal alignment of text. other options are: right, left */
+vertical-align:middle; /*for vertical-alignment of text. other options are: top, bottom */
+}
+
+
+
+/****************************************
+        Applying CSS for all the links
+******************************************/
+
+a{
+color:blue;
+}
+
+
+
+
+/****************************************
+        Applying CSS for Images
+******************************************/
+
+img {
+
+
+}
+
+
