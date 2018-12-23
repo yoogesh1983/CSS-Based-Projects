@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "description": "Landing page for natours",
   "main": "index.js",
-
   "scripts": {
-    "dev": "node-sass resources/sass/main.scss public/owner/style.css -w"
+    "dev": "node-sass resources/sass/main.scss public/owner/style.css"
   },
   "author": "yoogesh",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.11.0"
   }
 }
