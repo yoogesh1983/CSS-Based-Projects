@@ -5,8 +5,7 @@
 # What to compile and run the application ?
 > npm run dev </br>
 
-&nbsp; - Upon running this command will create style.css under the 'public/owner' folder </br>
-&nbsp; - npm run dev sometimes may hang on. in this case, you may need to change 'dev' with 'compile:sass' and run the command 'npm run compile:sass'. Now once this runs successfully, you may change back it to 'dev' from then onwards it starts work on 'npm run dev' too. Bug!!
+&nbsp; - Upon running this command will create style.css under the 'public/owner' folder. However sometimes the command may hangs on while runnig this command. in this case, you may need to change 'dev' with 'compile:sass' in package.json and run the command 'npm run compile:sass'. Now once this runs successfully, you may change back it to 'dev' from then onwards it starts work on 'npm run dev' too. Bug!!
 
 #Clip-path for to create polygon in css
 ########################################
