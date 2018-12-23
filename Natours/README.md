@@ -7,7 +7,7 @@
 
 &nbsp; - Upon running this command will create style.css under the 'public/owner' folder. However sometimes the command may hangs on while runnig this command. in this case, you may need to change 'dev' with 'compile:sass' in package.json and run the command 'npm run compile:sass'. Now once this runs successfully, you may change back it to 'dev' from then onwards it should start working on 'npm run dev' too. Bug!! </br>
 
-&nbsp; - You can now run this project directly at Visual-Code live-server (Bypassing the below live-server installation step) </br>
+&nbsp; - You can now run this project directly in Visual-Code live-server at http://127.0.0.1:5500/ (Bypassing the below live-server installation step) </br>
 > npm install live-server -g </br>
 > live-server </br>
 
