@@ -12,5 +12,5 @@
 > live-server </br>
 
 # Useful links
-- Clip-path for to create polygon in css: &nbsp; http://bennettfeely.com/clippy/ </br>
+- <b>Clip-path to create polygon in css</b>: &nbsp; http://bennettfeely.com/clippy/ </br>
 - Icon font: http://linea.io/ </br>
