@@ -21,14 +21,3 @@ http://bennettfeely.com/clippy/
 http://linea.io/
 
 
-
-#How to run live-server
-########################
-=> 
-=> Run live-server : 
-
-Note: 
-
-Note: You can run this project directly at 
-
-
