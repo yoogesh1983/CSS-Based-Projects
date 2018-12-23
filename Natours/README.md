@@ -13,4 +13,4 @@
 
 # Useful links
 - <b>Clip-path to create polygon in css</b>: &nbsp; http://bennettfeely.com/clippy/ </br>
-- Icon font: http://linea.io/ </br>
+- <b>Icon font</b>: http://linea.io/ </br>
