@@ -11,13 +11,6 @@
 > npm install live-server -g </br>
 > live-server </br>
 
-#Clip-path for to create polygon in css
-########################################
-http://bennettfeely.com/clippy/
-
-
-#Icon font
-##########
-http://linea.io/
-
-
+# Some important links which have been used in a project creations
+- Clip-path for to create polygon in css: &nbsp; http://bennettfeely.com/clippy/ </br>
+- Icon font: http://linea.io/ </br>
