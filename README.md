@@ -1,8 +1,8 @@
 # CSS-Based-Projects
 A complete CSS Based Projects that contain following Applications: </br></br>
 
-=> Basic_Project </br>
-=> University_Project </br>
-=> FoodService </br>
-=> Natours </br>
 => HtmlTemplate </br>
+=> Natours </br>
+=> FoodService </br>
+=> University_Project </br>
+=> Basic_Project </br>
