@@ -1,4 +1,4 @@
-# What is the application do? </br>
+# What does the application do? </br>
 - This is a skeleton for creating new Html page and has reuseable codes </br>
 
 # How to run the application?</br>
